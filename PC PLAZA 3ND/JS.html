@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       
+     <style>
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #02426d;
+            color: white;
+            text-align: left;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        a {
+            color: white;
+            /* Change text color to white */
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: #043465;
+            /* Dark blue background color */
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+            /* White color for the hamburger icon */
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            /* Change text color to white */
+        }
+
+        .navbar-nav .nav-item:hover .nav-link {
+            color: #ff6600 !important;
+            /* Change text color on hover */
+        }
+
+        .navbar-toggler {
+            border: none;
+            /* Remove border from the hamburger button */
+        }
+
+        form.d-flex {
+            margin-left: 20px;
+            /* Adjust the margin-left value as needed */
+        }
+
+        button.btn-outline-success {
+            height: 46px;
+            width: 100px;
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            /* Change text color to white */
+            background-color: #ffffff;
+            /* Set background color to dark blue */
+            border: 1px solid #043465;
+            /* Set border color to dark blue */
+            transition: background-color 0.3s, color 0.3s;
+            /* Add transition effect */
+            ;
+        }
+
+        button.btn-outline-success:hover {
+            background-color: #ff6600;
+            /* Change background color on hover to orange */
+            color: white;
+            /* Change text color on hover to white */
+        }
+
+        .bottom-footer {
+            text-align: center;
+            padding: 0em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            line-height: 1.2;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #bbbbbb;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: auto;
+            background-color: #2d2e33;
+            padding: 60px 10%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer-col {
+            width: 25%;
+        }
+
+        .footer-col h4 {
+            position: relative;
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 22px;
+            color: #f1bc0d;
+            text-transform: capitalize;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            background-color: #27c0ac;
+            height: 2px;
+            width: 40px;
+        }
+
+        ul li:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        ul li a {
+            display: block;
+            font-size: 19px;
+            text-transform: capitalize;
+            color: #bdb6b6;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+
+        ul li a:hover {
+            color: white;
+            padding-left: 2px;
+        }
+
+        .links a {
+            display: inline-block;
+            height: 44px;
+            width: 44px;
+            color: white;
+            background-color: rgba(40, 130, 214, 0.8);
+            margin: 0 8px 8px 0;
+            text-align: center;
+            line-height: 44px;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+
+        .links a:hover {
+            color: #4d4f55;
+            background-color: white;
+        }
+
+        @media (max-width: 740px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            .footer-col h4::before {
+                all: unset;
+            }
+        }
+
+        @media (max-width: 555px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+        
+     </style>
+    <title>PcPlaza-Buy</title>
+    <script>
+      alert("To ensure the security of your transaction, please sign in before making a payment. 🔐")
+      var b;
+       //1
+      function processNumber1() {
+          var numberValue = 1149;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+       //2
+      function processNumber2() {
+          var numberValue = 1149;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+       //3
+      function processNumber3() {
+          var numberValue = 950;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+       //4
+       function processNumber4() {
+          var numberValue = 879;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+       //5
+      function processNumber5() {
+          var numberValue = 930;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+       //6
+      function processNumber6() {
+          var numberValue = 199;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+       //7
+       function processNumber7() {
+          var numberValue = 109;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+       //8
+      function processNumber8() {
+          var numberValue = 100;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+       //9
+      function processNumber9() {
+          var numberValue = 120;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+        //10
+        function processNumber10() {
+          var numberValue = 25;
+          // Increment the value of b by 2
+          b = (b || 0) +numberValue ;
+          document.getElementById('message').innerHTML = "the total is " + b +"JD";
+      }
+      function discount(){
+        var d=document.getElementById("dis").value;
+        if(d=="plaza"){
+            b=b*0.75;
+            document.getElementById('message').innerHTML = "the total after discount by 25% is "+b+" JD";
+        }
+
+        
+      }
+      
+  </script>
+  </head>
+<body>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <h1><a href="index.html" style="text-decoration:none;">PCplaza</a></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="laptop.html">Laptops</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="product2.html">Accessories</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="AboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="sitemap.html">Sitemap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="JS.html"> Cart &#128722;</a>
+                </li>
+                
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Account
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="LogIn.html">Log In</a></li>
+                          <li><a class="dropdown-item" href="#">Sign In</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                      style="width: 200px;">
+                  <button class="btn btn-outline-success" type="submit" style="width: 100px;">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+
+
+
+
+
+    <h3>laptops :</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Accordion Item 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  ASUS TUF Gaming F15 (2023)
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> <img src="project photos/laptop1.jpg" alt="ASUS TUF Gaming F15 (2023)" class="img-fluid" width="70px" style="margin-right: 20%;">
+                   1149$<button type="button" class="btn btn-warning" onclick="processNumber1()" style="margin-left: 20%;">buy</button></div>
+            </div>
+        </div>
+          <!-- Accordion Item 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Asus VivoBook 16 (2023)
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><img src="project photos/laptop2.jpg" alt="Asus VivoBook 16 " class="img-fluid" width="70px" style="margin-right: 20%;">
+                  1149$<button type="button" class="btn btn-warning" onclick="processNumber2()" style="margin-left: 20%;">buy</button></div>
+            </div>
+        </div>
+          <!-- Accordion Item 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  HP Victus Gaming Laptop
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><img src="project photos/laptop3.jpg" alt="HP Victus Gaming Laptop" class="img-fluid" width="70px" style="margin-right: 20%;">
+                  950$<button type="button" class="btn btn-warning" onclick="processNumber3()" style="margin-left: 20%;">buy</button></div>
+            </div>
+        </div>
+          <!-- Accordion Item 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  DELL XPS 13 9315 Laptop
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> <img src="project photos/laptop4.jpg" alt="DELL XPS 13 9315 Laptop" width="70px" style="margin-right: 20%;">
+                  879$<button type="button" class="btn btn-warning" onclick="processNumber4()" style="margin-left: 20%;">buy</button></div>
+            </div>
+        </div>
+           <!-- Accordion Item 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  GIGABYTE AERO 15 OLED
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><img src="project photos/laptop5.jpg" alt="GIGABYTE AERO 15 OLED " class="img-fluid" width="70px" style="margin-right: 20%;">
+                  930$<button type="button" class="btn btn-warning" onclick="processNumber5()" style="margin-left: 20%;">buy</button></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h3>accessories :</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+       <!-- Accordion Item 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              Razer Stream Controller All-In-One Keypad
+            </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <img src="project photos/350100-550x400.webp" alt="Razer Stream Controller" class="img-fluid" width="70px" style="margin-right: 20%;">
+              199$ <button type="button" class="btn btn-warning" onclick="processNumber6()" style="margin-left: 20%;">buy</button></div>
+        </div>
+    </div>
+
+    <!-- Accordion Item 7 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              Logitech G502 X PLUS HERO 25K Sensor
+            </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <img src="project photos/w5022-550x400.webp" alt="Logitech G502 X PLUS HERO 25K Sensor " class="img-fluid" width="70px" style="margin-right: 20%;">
+              109$<button type="button" class="btn btn-warning" onclick="processNumber7()" style="margin-left: 20%;">buy</button></div>
+        </div>
+    </div>
+
+    <!-- Accordion Item 8 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+              HP Smart Tank 581 All-in-One (Print, Scan,Copy )
+            </button>
+        </h2>
+        <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <img src="project photos/581P6-550x400.webp" alt=">HP Smart Tank 581 All-in-One " class="img-fluid" width="70px"style="margin-right: 20%;">
+              100$<button type="button" class="btn btn-warning" onclick="processNumber8()" style="margin-left: 20%;">buy</button></div>
+        </div>
+    </div>
+
+    <!-- Accordion Item 9 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+              Wacom One 13 Creative Pen Display Drawing
+            </button>
+        </h2>
+        <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><img src="project photos/13ond-550x400.webp" alt="Wacom One 13 Creative Pen" width="70px"style="margin-right: 20%;">
+              120<button type="button" class="btn btn-warning" onclick="processNumber9()" style="margin-left: 20%;">buy</button></div>
+        </div>
+    </div>
+
+    <!-- Accordion Item 10 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+              Redragon GW800 1080P PC Webcam Built-in Dual Mic 360°
+            </button>
+        </h2>
+        <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><img src="project photos/w8000-550x400.webp" alt="Redragon GW800 1080P PC Webcam " class="img-fluid" width="70px"style="margin-right: 20%;">
+              25$<button type="button" class="btn btn-warning" onclick="processNumber10()" style="margin-left: 20%;">buy</button></div>
+        </div>
+    </div>
+    </div>
+
+
+    <h3 id="message" style="margin-left: 40%;"></h3>
+    <form action="get"> 
+    ENTER DISOCUNT CODE <input type="text" id="dis"  style="color: red;" required>
+<button type="button" class="btn btn-danger" onclick=" discount()">GO!</button>
+<p id="massage 2" style="margin-left: 40%;"></p>
+</form>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <div class="footer-col">
+          <h4>about us</h4>
+          <ul>
+              <li><a href="AboutUs.html">our team</a></li>
+            
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>network</h4>
+          <ul>
+              <li><a href="#">technology</a></li>
+              <li><a href="#">professional</a></li>
+              <li><a href="#">API</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>PC PLAZA</h4>
+          <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="Feedback.html">rate us ❤ </a></li>
+              
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="links">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/imb43"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </footer>
+
+    
+</body>
+</html>

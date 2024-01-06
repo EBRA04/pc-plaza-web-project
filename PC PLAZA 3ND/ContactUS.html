@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="styling.css">
+    
+   <style> 
+   a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold; 
+    }
+    
+
+    a:hover {
+        text-decoration: underline;
+        color: #ff6600;
+    }
+    hr {
+            border: 2px solid #ececec; 
+            margin: 20px 0; 
+        }
+
+        h1{
+            text-align: center;
+        }
+        #div1 {
+            
+            background-color:#404040;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position:static;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+           
+        }
+
+        
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #div1 a {
+            color: white;
+            text-decoration: none;
+        }
+        #div1 a:hover {
+        text-decoration: underline;
+        color: #ff6600;
+            }
+        
+            header{
+                color: white;
+            }
+            
+        .navbar {
+            background-color: #043465; /* Dark blue background color */
+        }
+
+        .navbar-toggler-icon {
+            background-color: white; /* White color for the hamburger icon */
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important; /* Change text color to white */
+        }
+
+        .navbar-nav .nav-item:hover .nav-link {
+            color: #ff6600 !important; /* Change text color on hover */
+        }
+
+        .navbar-toggler {
+            border: none; /* Remove border from the hamburger button */
+        }
+
+        form.d-flex {
+            margin-left: 20px; /* Adjust the margin-left value as needed */
+        }
+        button.btn-outline-success {
+    height: 46px;
+    width: 100px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0); /* Change text color to white */
+    background-color: #ffffff; /* Set background color to dark blue */
+    border: 1px solid #043465; /* Set border color to dark blue */
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+    ;
+}
+
+button.btn-outline-success:hover {
+    background-color: #ff6600; /* Change background color on hover to orange */
+    color: white; /* Change text color on hover to white */
+}
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #bbbbbb;
+}
+
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #2d2e33;
+    padding: 60px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #f1bc0d;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    color: #4d4f55;
+    background-color: white;
+}
+
+@media(max-width: 740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::before{
+        all: unset;
+    }
+}
+
+@media(max-width: 555px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+
+        
+
+</style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h1><a href="index.html" style="text-decoration:none;">PCplaza</a></h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="laptop.html">laptops</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="product2.html">accessories</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">AboutUs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sitemap.html">sitemap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="JS.html"> Cart &#128722;</a>
+                </li>
+                
+
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="LogIn.html">log in</a></li>
+                      <li><a class="dropdown-item" href="#">sign in</a></li>
+                    </ul>
+
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 200px;">
+                  <button class="btn btn-outline-success" type="submit" style="width: 100px;">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </nav>
+    <br>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-3 phone">
+                <img src="project photos/via phone.png" height="150" width="150">
+                <b><h5>(Sunday to Thursday, 8 am to 5 pm PST)</h5></b>
+                <h2>Call Us on:</h2>
+                <h3>Jordan :</h3>
+                <a href="tel:+962779808791">+962779808791</a><br>
+                <a href="tel:+962791549660">+962791549660</a><br>
+                <a href="tel:+9627764748416">+9627764748416</a><br>
+                <h3>International :</h3>
+                <a href="tel:+1-604-637-0780">+1-604-637-0780</a>
+            </div>
+
+            <div class="col-md-3 phone">
+                <img src="project photos/via mail.png" height="150" width="150">
+                <a href="mailto:electroease@co.com"><h2>Our Mailbox</h2></a>
+            </div>
+
+            <div class="col-md-3 social-media">
+                <img src="project photos/via social" height="150" width="150">
+                <h2>Our Social Media</h2>
+                <a href="https://www.facebook.com/" target="_blank"><img src="project photos/facebook icone.png" height="34" width="34" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="project photos/x icone.png" height="34" width="34" alt="Twitter"></a>
+                <a href="https://www.instagram.com/imb43" target="_blank"><img src="project photos/instagram logo.png" height="34" width="34" alt="Instagram"></a>
+            </div>
+
+            <div class="col-md-3 location">
+                <img src="project photos/via location.png" height="150" width="150">
+                <h2>Visit Our Office at</h2>
+                Waheed Abdulhady 8<br>
+                SAFA BADRAN<br>
+                AMMAN GOVERNORATE<br>
+                11954
+            </div>
+        </div>
+    </div>
+
+          
+<br>
+<footer>
+    <div class="footer-col">
+        <h4>about us</h4>
+        <ul>
+            <li><a href="AboutUs.html">our team</a></li>
+          
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>network</h4>
+        <ul>
+            <li><a href="#">technology</a></li>
+            <li><a href="#">professional</a></li>
+            <li><a href="#">API</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>PC PLAZA</h4>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="Feedback.html">rate us ❤ </a></li>
+            
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/imb43"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+</div> 
+
+
+
+</div>
+</body>
+</html>

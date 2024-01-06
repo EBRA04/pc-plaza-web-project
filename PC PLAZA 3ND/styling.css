@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+* {font-family: Arial, sans-serif;}
+header {
+    background-color: #02426d;;
+    color: white;
+    text-align: left;
+    padding: 1em;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Space elements apart */
+    align-items: center; /* Align items vertically */
+}
+
+nav {
+    text-align: center;
+    background-color:#404040;
+    padding: 1em;
+}
+
+nav a {
+    margin-right: 1em;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+
+}
+a:hover {
+    color: #ff6600;
+}
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+#div1 {
+    
+    background-color:#404040;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+   
+}
+
+
+.product-box {
+    width: 300px;
+    margin-bottom: 50px;
+    border: 1px solid #ddd;
+    padding-left: 50%;
+    padding-right: 50%;
+    text-align: center;
+}
+
+
+
+form {
+    display: flex;
+    align-items: center;
+    margin-left: 425px;
+    margin-right: auto;
+    max-width: 400px; 
+    
+    
+}
+
+
+a {
+    margin: 25px;
+    color: #ddd;
+}
+input{
+    height: 40px;
+    width:600px;
+    border-radius: 20px;
+}
+button{
+    height: 46px;
+    width: 150px;
+    border-radius: 20px;
+}
+#login{
+    height: 30x;
+    width: 100px;
+    border-radius: 20px;
+    
+}
+#laptops{
+    position: absolute;
+top: 350px;
+left: 20%;
+}
+#acc{
+    position: absolute;
+top: 350px;
+left: 50%; 
+}
+a:hover {
+    color: #ff6600;
+}
