@@ -1,3 +1,4 @@
-# pc-plaza-web-project
-PC Plaza - Your Ultimate Destination for PC Gear  Welcome to PC Plaza, your one-stop-shop for all things related to PCs! Whether you're a seasoned gamer, a professional content creator, or someone looking to upgrade their computing setup, PC Plaza has got you covered. 🖥️💻🎮
 
+PC Plaza is a web-based project developed using HTML, JavaScript, and CSS. It showcases a fully functional online PC store where users can browse, select, and interact with a variety of PC components and accessories. The project demonstrates dynamic UI elements, interactive features, and responsive design principles to provide a seamless user experience.
+
+This project highlights my skills in front-end web development, focusing on building engaging and user-friendly interfaces. Feel free to explore the code and provide feedback!
